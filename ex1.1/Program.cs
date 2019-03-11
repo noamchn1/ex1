@@ -7,6 +7,7 @@ namespace ex1._1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            ///njkjnk,n,k,
         }
     }
 }
