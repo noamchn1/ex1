@@ -9,7 +9,6 @@ namespace ex1._1
             FunctionsContainer funcList = new FunctionsContainer();
             funcList["Double"] = x => x * 2;
             Console.WriteLine(funcList["Double"].ToString());
-            Console.ReadLine();
         }
     }
 }
