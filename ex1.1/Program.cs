@@ -6,8 +6,10 @@ namespace ex1._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            ///njkjnk,n,k,
+            FunctionsContainer funcList = new FunctionsContainer();
+            funcList["Double"] = x => x * 2;
+            Console.WriteLine(funcList["Double"].ToString());
+            Console.ReadLine();
         }
     }
 }
