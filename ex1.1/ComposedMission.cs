@@ -22,9 +22,10 @@ namespace ex1._1
 
         public event EventHandler<double> OnCalculate;
 
-        public void Add(FunctionsContainer.del f)
+        internal ComposedMission Add(FunctionsContainer.del f)
         {
             functions.Add(f);
+            return this;
         }
 
         public double Calculate(double value)

@@ -10,7 +10,7 @@ namespace ex1._1
         private string type;
         private FunctionsContainer.del function;
 
-        public SingleMission(string n, FunctionsContainer.del f)
+        public SingleMission(FunctionsContainer.del f, string n)
         {
             name = n;
             type = "Single";

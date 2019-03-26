@@ -25,5 +25,13 @@ namespace ex1._1
                 return funcs[funcName];
             }
         }
+
+        public void PrintAllMissions()
+        {
+            foreach(KeyValuePair<string, del> keyValue in funcs)
+            {
+                Console.WriteLine(keyValue.Key);
+            }
+        }
     }
 }
