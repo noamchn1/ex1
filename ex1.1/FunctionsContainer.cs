@@ -14,7 +14,7 @@ namespace ex1._1
         {
             set
             {
-                funcs.Add(funcName, value);
+                funcs[funcName] = value;
             }
             get
             {
@@ -27,14 +27,14 @@ namespace ex1._1
             }
         }
 
-        public void PrintAllMissions()
+        public void PrintAvailableFunctions()
         {
-            foreach(KeyValuePair<string, del> keyValue in funcs)
+            Console.WriteLine("All Available Functions:");
+            foreach (KeyValuePair<string, del> keyValue in funcs)
             {
-                Console.WriteLine("All Available Functions");
                 Console.WriteLine(keyValue.Key);
-                Console.WriteLine("####################################");
             }
+            Console.WriteLine("####################################");
         }
     }
 }
