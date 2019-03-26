@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ex1._1
+namespace Excercise_1
 {
-    class ComposedMission : IMission
+    public class ComposedMission : IMission
     {
         private string name;
         private string type;

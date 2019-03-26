@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ex1._1
+namespace Excercise_1
 {
 
     class FunctionsContainer
@@ -27,14 +27,14 @@ namespace ex1._1
             }
         }
 
-        public void PrintAvailableFunctions()
+        public List<string> getAllMissions()
         {
-            Console.WriteLine("All Available Functions:");
+            List<string> missions = new List<string>();
             foreach (KeyValuePair<string, del> keyValue in funcs)
             {
-                Console.WriteLine(keyValue.Key);
+                missions.Add(keyValue.Key);
             }
-            Console.WriteLine("####################################");
+            return missions;
         }
     }
 }
