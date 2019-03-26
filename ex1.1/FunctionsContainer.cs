@@ -18,6 +18,7 @@ namespace ex1._1
             }
             get
             {
+                // if funcs doesn't contain the key of funcName, don't change the value
                 if (!funcs.ContainsKey(funcName))
                 {
                     funcs[funcName] = i => i;
@@ -30,7 +31,9 @@ namespace ex1._1
         {
             foreach(KeyValuePair<string, del> keyValue in funcs)
             {
+                Console.WriteLine("All Available Functions");
                 Console.WriteLine(keyValue.Key);
+                Console.WriteLine("####################################");
             }
         }
     }
